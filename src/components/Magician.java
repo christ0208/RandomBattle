@@ -11,4 +11,16 @@ public class Magician extends Hero {
 		// TODO Auto-generated method stub
 		return super.normalAttack() / 2;
 	}
+	
+	@Override
+	protected int getDecreasingDamage() {
+		// TODO Auto-generated method stub
+		return super.getDecreasingDamage() - 2;
+	}
+	
+	@Override
+	public String getJob() {
+		// TODO Auto-generated method stub
+		return "Magician";
+	}
 }

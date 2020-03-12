@@ -17,5 +17,17 @@ public class Warrior extends Hero {
 		// TODO Auto-generated method stub
 		return this.atkPoint + 5;
 	}
+	
+	@Override
+	protected int getDecreasingDamage() {
+		// TODO Auto-generated method stub
+		return super.getDecreasingDamage() + 3;
+	}
+	
+	@Override
+	public String getJob() {
+		// TODO Auto-generated method stub
+		return "Warrior";
+	}
 
 }

@@ -75,8 +75,22 @@ public abstract class Hero {
 		return MyRandom.randomNumber(1, defPoint);
 	}
 	
+	public String getJob() {
+		return "Hero";
+	}
+	
 	public void receiveDamage(int damage) {
-		this.hp -= (damage - this.getDecreasingDamage());
+		int netDamage = damage - this.getDecreasingDamage();
+		this.hp -= netDamage;
+		System.out.println(this.getJob() + " takes " + netDamage + " damage");
+	}
+	
+	public void heal() {
+		int healHp =  this.maxHP * 5 / 100;
+		System.out.println(this.getJob() + " heal his/her HP by " + healHp);
+		this.hp += healHp;
+		if(this.hp > this.maxHP)
+			this.hp = this.maxHP;
 	}
 	
 }

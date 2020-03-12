@@ -1,10 +1,10 @@
 package entry;
 
-import handlers.MainMenuHandler;
+import handlers.PickHeroHandler;
 
 public class MainClass {
 	public MainClass() {
-		new MainMenuHandler().handle();
+		new PickHeroHandler().handle();
 	}
 	
 	public static void main(String[] args) {
