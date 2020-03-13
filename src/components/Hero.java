@@ -93,4 +93,13 @@ public abstract class Hero {
 			this.hp = this.maxHP;
 	}
 	
+	public boolean isDead() {
+		return this.hp <= 0;
+	}
+	
+	public void getStatus() {
+		System.out.println("Job: " + this.getJob());
+		System.out.println("HP: " + this.hp + "/" + this.maxHP);
+	}
+	
 }

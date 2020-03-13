@@ -16,7 +16,7 @@ public abstract class PickHeroCommand extends NumberCommand {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import commands.AttackCommand;
+import commands.HealCommand;
 import commands.MagicianCommand;
 import commands.NumberCommand;
 import commands.WarriorCommand;
@@ -26,6 +27,6 @@ public class Constants {
 		pickHeroCommands.put(2, MagicianCommand.class);
 		
 		battleCommands.put(1, AttackCommand.class);
-		battleCommands.put(2, AttackCommand.class);
+		battleCommands.put(2, HealCommand.class);
 	}
 }

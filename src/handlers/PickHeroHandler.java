@@ -3,6 +3,7 @@ package handlers;
 import commands.NumberCommand;
 import components.Magician;
 import components.Warrior;
+import utils.ClearScreen;
 import utils.Constants;
 import utils.EnemySelection;
 import utils.MagicianInitialState;
@@ -14,12 +15,14 @@ public class PickHeroHandler implements IBaseHandler {
 
 	@Override
 	public void handle() {
+		ClearScreen.clear();
 		int input = 0;
 		do {
 			System.out.println("Pick your hero: ");
 			for (String menu : Constants.pickHeroMenuList) {
 				System.out.println(menu);
 			}
+			System.out.print("Choose >> ");
 			input = MyScanner.getInt();
 			redirection(input);
 		}while(input < 1 || input > Constants.pickHeroCommands.size());
